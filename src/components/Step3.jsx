@@ -19,7 +19,7 @@ const Step3 = () => {
                         <h1 className='text-xl text-Marineblue'>Online service</h1>
                         <p className=' text-Coolgray text-sm'>Access to multiplayer games</p>
                     </div>
-                    <p className="text-Purplishblue ml-auto">+$1/mo</p>
+                    <p className="text-Purplishblue ml-auto">{monthly ? '+$1/mo' : '+$10/yr'}</p>
                 </div>
                 <div className={`flex items-center gap-2 py-3 px-2 border-2 rounded-lg ${second ? ' border-Purplishblue bg-Lightblue' : ' border-Coolgray bg-white'}`}>
                     <input className='w-6 h-6' onChange={() => { setSecond(!second) }} type="checkbox" name="online-service" id="online-service" />
@@ -27,7 +27,7 @@ const Step3 = () => {
                         <h1 className='text-xl text-Marineblue'>Larger storage</h1>
                         <p className=' text-Coolgray text-sm'>Extra 1TB of cloud save</p>
                     </div>
-                    <p className="text-Purplishblue ml-auto">+$2/mo</p>
+                    <p className="text-Purplishblue ml-auto">{monthly ? '+$2/mo' : '+$20/yr'}</p>
                 </div>
                 <div className={`flex items-center gap-2 py-3 px-2 border-2 rounded-lg ${third ? ' border-Purplishblue bg-Lightblue' : ' border-Coolgray bg-white'}`}>
                     <input className='w-6 h-6' onChange={() => { setThird(!third) }} type="checkbox" name="online-service" id="online-service" />
@@ -35,7 +35,7 @@ const Step3 = () => {
                         <h1 className='text-xl text-Marineblue'>Online service</h1>
                         <p className=' text-Coolgray text-sm'>Custom theme on your Profile</p>
                     </div>
-                    <p className="text-Purplishblue ml-auto">+$2/mo</p>
+                    <p className="text-Purplishblue ml-auto">{monthly ? '+$2/mo' : '+$20/yr'}</p>
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Stepbar = () => {
-    const currentStep = 3;
+    const currentStep = 4;
     return (
         <div className='stepbar bg-[url(/images/bg-sidebar-mobile.svg)]  lg:bg-[url(/images/bg-sidebar-desktop.svg)] bg-no-repeat  pt-14 pb-20  lg:pt-10 lg:h-[500px] lg:bg-cover lg:rounded-t-lg lg:rounded-b-lg w-full bg-cover lg:w-[27%] lg:min-w-[200px]'>
             <div className="step-container flex lg:flex-col justify-center items-center space-x-4 lg:space-x-0 lg:space-y-4 lg:pl-5">
