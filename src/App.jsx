@@ -12,11 +12,11 @@ function App() {
     2: <Step2 />,
     3: <Step3 />,
     4: <Step4 />,
-    5:<ThankYou/>
+    5: <ThankYou />
   }
   const step = useSelector(state => state.step.value)
   return (
-    <div className="bg-Lightgray font-ubuntu w-full h-[80vh] lg:h-[100vh] lg:flex lg:justify-center lg:items-center ">
+    <div className="bg-Lightblue font-ubuntu w-full h-[80vh] lg:h-[100vh] lg:flex lg:justify-center lg:items-center ">
       <div className="w-full lg:max-w-4xl lg:flex justify-center h-full lg:h-auto lg:justify-between lg:p-4 items-center lg:bg-white lg:w-[60%] lg:rounded-lg">
 
         <Stepbar />
