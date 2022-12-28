@@ -43,7 +43,7 @@ export const planSlice = createSlice({
             state.SELECTED_ADD_ONS.map((addOn) => {
                 selectedAddonPrice += state.ADD_ONS_PRICE[addOn]
             })
-            console.log(selectedAddonPrice)
+
             state.SELECTED_PLAN = action.payload
             state.TOTAL_PRICE = state.PLANS_PRICE[state.SELECTED_PLAN] + (selectedAddonPrice ? selectedAddonPrice : 0)
         },
@@ -52,7 +52,7 @@ export const planSlice = createSlice({
                 const payloadIndex = state.SELECTED_ADD_ONS.indexOf(action.payload)
                 state.SELECTED_ADD_ONS.splice(payloadIndex, 1);
                 state.TOTAL_PRICE -= state.ADD_ONS_PRICE[action.payload]
-                console.log('addOn removed', action.payload,)
+
             }
             else {
                 state.SELECTED_ADD_ONS.push(action.payload)

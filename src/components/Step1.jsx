@@ -26,7 +26,7 @@ const Step1 = () => {
                 </div>
                 <div className='inputs-container'>
                     <label className='block text-Marineblue font-semibold' htmlFor="phone">Phone Number</label>
-                    <input className='border-2 border-Coolgray rounded-md p-2 w-full outline-Purplishblue invalid:outline-Strawberryred' type="tel" id='phone' name='phone' placeholder='e.g. +1 234 567 890' required minLength={10} maxLength={12} />
+                    <input className='border-2 border-Coolgray rounded-md p-2 w-full outline-Purplishblue invalid:outline-Strawberryred' type="tel" id='phone' name='phone' placeholder='e.g. +1 234 567 890' required minLength={10} />
                 </div>
             </form>
         </div>
