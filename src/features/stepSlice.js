@@ -1,12 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
     value: 1,
-    formValid: false,
+    formValid: true,
 }
 export const stepSlice = createSlice({
     name: 'step', initialState, reducers: {
         stepUp: (state) => {
-            if ((state.value !== 4) && state.formValid) {
+            if ((state.value !== 5) && state.formValid) {
                 state.value += 1
             }
         },
@@ -15,10 +15,13 @@ export const stepSlice = createSlice({
                 state.value -= 1
             }
         },
+        setStepByNumber: (state, action) => {
+            state.value = action.payload
+        },
         formValidTrue: (state) => {
             state.formValid = true
         }
     }
 })
-export const { stepUp, stepDown, formValidTrue } = stepSlice.actions
+export const { stepUp, stepDown, formValidTrue, setStepByNumber } = stepSlice.actions
 export default stepSlice.reducer

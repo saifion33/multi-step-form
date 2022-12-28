@@ -16,7 +16,7 @@ const Stepbar = () => {
                     </div>
                 </div>
                 <div className='lg:flex lg:space-x-3 lg:w-full'>
-                    <div className={`step lg:text-xl  border-2 border-Lightblue rounded-full w-9 lg:w-11 h-9 lg:h-11 flex items-center justify-center ${currentStep == 2 ? 'bg-Lightblue text-Marineblue ' : ' text-Lightblue '}`}>
+                    <div className={`step lg:text-xl  border-2 border-Lightblue rounded-full w-9 lg:w-11 h-9 lg:h-11 flex items-center justify-center ${currentStep === 2 ? 'bg-Lightblue text-Marineblue ' : ' text-Lightblue '}`}>
                         <h1 className=''>2</h1>
                     </div>
                     <div className='hidden lg:block'>
@@ -25,7 +25,7 @@ const Stepbar = () => {
                     </div>
                 </div>
                 <div className='lg:flex lg:space-x-3 lg:w-full'>
-                    <div className={`step lg:text-xl  border-2 border-Lightblue rounded-full w-9 lg:w-11 h-9 lg:h-11 flex items-center justify-center ${currentStep == 3 ? 'bg-Lightblue text-Marineblue ' : ' text-Lightblue '}`}>
+                    <div className={`step lg:text-xl  border-2 border-Lightblue rounded-full w-9 lg:w-11 h-9 lg:h-11 flex items-center justify-center ${currentStep === 3 ? 'bg-Lightblue text-Marineblue ' : ' text-Lightblue '}`}>
                         <h1 className=''>3</h1>
                     </div>
                     <div className='hidden lg:block'>
@@ -34,7 +34,7 @@ const Stepbar = () => {
                     </div>
                 </div>
                 <div className='lg:flex lg:space-x-3 lg:w-full'>
-                    <div className={`step lg:text-xl border-2 border-Lightblue rounded-full w-9 lg:w-11 h-9 lg:h-11 flex items-center justify-center ${currentStep == 4 ? 'bg-Lightblue text-Marineblue ' : ' text-Lightblue '}`}>
+                    <div className={`step lg:text-xl border-2 border-Lightblue rounded-full w-9 lg:w-11 h-9 lg:h-11 flex items-center justify-center ${(currentStep >= 4) ? 'bg-Lightblue text-Marineblue ' : ' text-Lightblue '}`}>
                         <h1 className=''>4</h1>
                     </div>
                     <div className='hidden lg:block'>

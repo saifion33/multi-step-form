@@ -5,12 +5,14 @@ import Step3 from "./components/Step3"
 import Step4 from "./components/Step4"
 import Stepbar from "./components/Stepbar"
 import { useSelector } from "react-redux"
+import ThankYou from "./components/ThankYou"
 function App() {
   const stepComponent = {
     1: <Step1 />,
     2: <Step2 />,
     3: <Step3 />,
     4: <Step4 />,
+    5:<ThankYou/>
   }
   const step = useSelector(state => state.step.value)
   return (

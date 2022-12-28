@@ -8,9 +8,10 @@ import { plans } from '../features/planSlice'
 const Step2 = () => {
 
     const dispatch = useDispatch()
-    const monthly = useSelector(state => state.plan.planType.monthly)
-    // const [selectedPlan, setSelectedPlan] = useState('arcade')
-    const selectedPlan = useSelector(state => state.plan.selectedPlan)
+    const monthly = useSelector(state => state.plan.PLAN_TYPE.monthly)
+    const PLANS_PRICE = useSelector(state => state.plan.PLANS_PRICE)
+    // const [SELECTED_PLAN, setSelectedPlan] = useState('arcade')
+    const selectedPlan = useSelector(state => state.plan.SELECTED_PLAN)
     const planSelecter = (plan) => {
         dispatch(changePlan(plan))
     }
@@ -18,6 +19,7 @@ const Step2 = () => {
         <div className='step1 bg-white w-[96%] lg:w-[80%] rounded-md absolute  top-[-13%] lg:top-0 p-4 m-4 lg:m-0'>
             <div className="step-details">
                 <h1 className='text-3xl font-bold text-Marineblue'>Select your plan</h1>
+
                 <p className='text-Coolgray pr-3 py-3 tracking-wide'>Your have the option of monthly or yearly billing.</p>
             </div>
             <div className="plan-container space-y-4 lg:space-y-8 mt-4 ">
