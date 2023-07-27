@@ -28,7 +28,7 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 ### Screenshot
 
-![]("https://raw.githubusercontent.com/saifion33/multi-step-form/master/public/screenshot/screenshot-multi-step-form.png")
+![](https://raw.githubusercontent.com/saifion33/multi-step-form/master/public/screenshot/screenshot-multi-step-form.png)
 
 ### Links
 
